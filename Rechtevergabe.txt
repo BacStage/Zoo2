@@ -1,0 +1,91 @@
+ALT
+
+Geschäftsführung
+- alles
+
+Personalabteilung 
+lesen: alles
+schreiben: alles
+
+Einkauf
+lesen: Nahrungsmenge, Nahrungstyp, Tier
+schreiben: Nahrungsmenge
+
+Tierpflege
+lesen: Gehege letzte Reinigung
+schreiben: Gehege letzte Reinigung
+
+Tiermedizin
+lesen: Tier, medizinische Untersuchung
+schreiben: medizinische Untersuchung
+
+Wartung:
+lesen: letzte Wartung, nächste Wartung
+schreiben: letzte Wartung, nächste Wartung
+
+Reinigung
+lesen: letzte/nächste Reinigung
+schreiben: letzte/nächste Reinigung
+--------------------------------------------------------------------------------------------------------
+NEU
+
+Personalabteilung
+- Zugriff(R/W) auf Mitarbeiter
+
+Tierpflege
+- Zugriff(R/W) auf Tiere, Tierart, Tiergattung, Tierklasse, Futtermenge, Futter
+
+Abteilung "Verwaltung"
+- auf Gehege
+- auf Objektart
+
+kaufmännische Angestellter
+- auf Einkauf
+
+
+
+
+Benutzer, Rechte, Rollen, Schemas
+
+Schemata:
+verwaltung (für Verwaltung)
+- Einkauf
+- View.Futtertyp_Einkauf
+
+hr (für Personalabteilung)
+- View.Abteilung_Mitarbeiteranzahl
+- View.Tätigkeit_Mitarbeiteranzahl
+- View.Wohnort_Mitarbeiteranzahl
+- proc.InsertNeuenMitarbeiter
+- proc.UpdateMitarbeiter
+
+tierpflege (für Tierpfleger, Tierarzt)
+- VIEW.Gehege_Tieranzahl
+- VIEW.Tierart_Tieranzahl
+- VIEW.Tierklasse_Tieranzahl
+- VIEW.Futterpläne
+
+luh (LagerUndHandwerk)
+- VIEW.Objektart_Anzahl
+- VIEW.Gehege_Objekt_Anzahl
+
+
+Rollen
+Serverrolle - alle public
+DB-Rolle
+
+
+Benutzer/User
+personalabteilung - abc123
+
+
+
+
+
+
+
+
+
+
+
+
