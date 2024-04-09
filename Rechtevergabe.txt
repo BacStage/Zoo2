@@ -49,23 +49,29 @@ Benutzer, Rechte, Rollen, Schemas
 
 Schemata:
 verwaltung (für Verwaltung)
-- Einkauf
 - View.Futtertyp_Einkauf
+- procInsertEinkauf
+- procUpdateEinkauf
+- procLöscheEinkauf
 
 hr (für Personalabteilung)
 - View.Abteilung_Mitarbeiteranzahl
 - View.Tätigkeit_Mitarbeiteranzahl
 - View.Wohnort_Mitarbeiteranzahl
-- proc.InsertNeuenMitarbeiter
-- proc.UpdateMitarbeiter
+- procInsertNeuenMitarbeiter
+- procUpdateMitarbeiter
+- procSetzeMitarbeiterAufAktiv
+- procSetzeMitarbeiterAufInaktiv
 
 tierpflege (für Tierpfleger, Tierarzt)
 - VIEW.Gehege_Tieranzahl
 - VIEW.Tierart_Tieranzahl
 - VIEW.Tierklasse_Tieranzahl
 - VIEW.Futterpläne
+- procInsertFutterplan
+- procUpdateFutterplan
 
-luh (LagerUndHandwerk)
+handwerk
 - VIEW.Objektart_Anzahl
 - VIEW.Gehege_Objekt_Anzahl
 
@@ -75,9 +81,14 @@ Serverrolle - alle public
 DB-Rolle
 
 
-Benutzer/User
-personalabteilung - abc123
+Benutzer/User/Anmeldungen
+personalabteilung - PW: abc123
+-> hat Lese- und Schreib-Zugriff auf Schema hr
 
+Geschäftsführer darf alles lesen
+chef - PW: abc123
+-> Lesezugriff auf alles
+-> Lese- und Schreibzugriff auf Schema hr
 
 
 
