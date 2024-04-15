@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MitarbeiterData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MitarbeiterData.xsd</DependentUpon>
+    </Compile>
     <Compile Include="NavigationControl.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -94,6 +99,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="MitarbeiterData.xsc">
+      <DependentUpon>MitarbeiterData.xsd</DependentUpon>
+    </None>
+    <None Include="MitarbeiterData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MitarbeiterData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MitarbeiterData.xss">
+      <DependentUpon>MitarbeiterData.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -6,18 +6,18 @@ CREATE LOGIN handwerker WITH PASSWORD='abc123', CHECK_POLICY = OFF;
 CREATE LOGIN verwaltung WITH PASSWORD='abc123', CHECK_POLICY = OFF;
 
 -- Erzeugung Benutzer mit Verknüpfung zum Login und Schema
-CREATE USER personalabteilungUser FOR LOGIN personalabteilung WITH DEFAULT_SCHEMA = dbo;
-CREATE USER pflegerUser FOR LOGIN pfleger WITH DEFAULT_SCHEMA = dbo;
-CREATE USER tierarztUser FOR LOGIN tierarzt WITH DEFAULT_SCHEMA = dbo;
-CREATE USER handwerkerUser FOR LOGIN handwerker WITH DEFAULT_SCHEMA = dbo;
-CREATE USER verwaltungUser FOR LOGIN verwaltung WITH DEFAULT_SCHEMA = dbo;
+--CREATE USER personalabteilungUser FOR LOGIN personalabteilung WITH DEFAULT_SCHEMA = dbo;
+--CREATE USER pflegerUser FOR LOGIN pfleger WITH DEFAULT_SCHEMA = dbo;
+--CREATE USER tierarztUser FOR LOGIN tierarzt WITH DEFAULT_SCHEMA = dbo;
+--CREATE USER handwerkerUser FOR LOGIN handwerker WITH DEFAULT_SCHEMA = dbo;
+--CREATE USER verwaltungUser FOR LOGIN verwaltung WITH DEFAULT_SCHEMA = dbo;
 
 -- Erzegung Benutzerrollen
-CREATE ROLE personalerRole;
-CREATE ROLE pflegerRole;
-CREATE ROLE arztRole;
-CREATE ROLE handwerkerRole;
-CREATE ROLE verwalterRole;
+--CREATE ROLE personalerRole;
+--CREATE ROLE pflegerRole;
+--CREATE ROLE arztRole;
+--CREATE ROLE handwerkerRole;
+--CREATE ROLE verwalterRole;
 
 -- Zuweisung Mitgliedschaft von Benutzern zu Benutzerrollen; Definieren von Zugriffsrechten für Benutzerrollen
 ALTER ROLE personalerRole ADD MEMBER personalabteilungUser;

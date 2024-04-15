@@ -22,10 +22,10 @@ namespace Crud_App.Navigation
         {
             const string username = "personalabteilung";
             const string password = "abc123";
-            const string tempDataSource = "localhost\\SQLEXPRESS01";
+            // const string tempDataSource = "localhost\\SQLEXPRESS01";
             // const string productionDataSource = "(localdb)\\mssqllocaldb";
 
-            const string connectionString = @"Data Source=localhost\SQLEXPRESS01;" +
+            const string connectionString = @"Data Source=(localdb)\mssqllocaldb;" +
                     "Initial Catalog=Zoo;" +
                     "Persist Security Info=True;User ID=" + username + ";Password=" + password + "";
 
