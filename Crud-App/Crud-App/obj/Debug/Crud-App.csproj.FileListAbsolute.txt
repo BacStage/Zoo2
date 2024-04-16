@@ -24,3 +24,16 @@ H:\LF-12\Aufgabe Zoo\Zoo II\Vorbereitung Abgabe\Crud-App\Crud-App\obj\Debug\Crud
 H:\LF-12\Aufgabe Zoo\Zoo II\Vorbereitung Abgabe\Crud-App\Crud-App\obj\Debug\Crud-App.csproj.CoreCompileInputs.cache
 H:\LF-12\Aufgabe Zoo\Zoo II\Vorbereitung Abgabe\Crud-App\Crud-App\obj\Debug\Crud-App.exe
 H:\LF-12\Aufgabe Zoo\Zoo II\Vorbereitung Abgabe\Crud-App\Crud-App\obj\Debug\Crud-App.pdb
+D:\Zoo\Zoo2\Crud-App\Crud-App\bin\Debug\Crud-App.exe.config
+D:\Zoo\Zoo2\Crud-App\Crud-App\bin\Debug\Crud-App.exe
+D:\Zoo\Zoo2\Crud-App\Crud-App\bin\Debug\Crud-App.pdb
+D:\Zoo\Zoo2\Crud-App\Crud-App\obj\Debug\Crud-App.csproj.AssemblyReference.cache
+D:\Zoo\Zoo2\Crud-App\Crud-App\obj\Debug\Crud_App.Form1.resources
+D:\Zoo\Zoo2\Crud-App\Crud-App\obj\Debug\Crud_App.Navigation.UebersichtSeite.resources
+D:\Zoo\Zoo2\Crud-App\Crud-App\obj\Debug\Crud_App.Navigation.UpdateSeite.resources
+D:\Zoo\Zoo2\Crud-App\Crud-App\obj\Debug\Crud_App.Navigation.NeuanlageSeite.resources
+D:\Zoo\Zoo2\Crud-App\Crud-App\obj\Debug\Crud_App.Properties.Resources.resources
+D:\Zoo\Zoo2\Crud-App\Crud-App\obj\Debug\Crud-App.csproj.GenerateResource.cache
+D:\Zoo\Zoo2\Crud-App\Crud-App\obj\Debug\Crud-App.csproj.CoreCompileInputs.cache
+D:\Zoo\Zoo2\Crud-App\Crud-App\obj\Debug\Crud-App.exe
+D:\Zoo\Zoo2\Crud-App\Crud-App\obj\Debug\Crud-App.pdb

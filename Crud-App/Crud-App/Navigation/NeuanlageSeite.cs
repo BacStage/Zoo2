@@ -22,21 +22,17 @@ namespace Crud_App.Navigation
         {
             const string username = "personalabteilung";
             const string password = "abc123";
-            // const string tempDataSource = "localhost\\SQLEXPRESS01";
-            // const string productionDataSource = "(localdb)\\mssqllocaldb";
+            // const string tempDataSource = "localhost\SQLEXPRESS01";
+            // const string productionDataSource = "(localdb)\mssqllocaldb";
 
-            const string connectionString = @"Data Source=(localdb)\mssqllocaldb;" +
+            const string connectionString = @"Data Source=localhost\SQLEXPRESS01;" +
                     "Initial Catalog=Zoo;" +
                     "Persist Security Info=True;User ID=" + username + ";Password=" + password + "";
 
-            string vorname = textBoxVorname.Text;
-
-
-
-            using (SqlConnection con = new SqlConnection(connectionString)) 
+            using (var con = new SqlConnection(connectionString)) 
             {
                 con.Open();
-                var query = $"INSERT into Mitarbeiter(Vorname, Name, Strasse, PLZ, Ort) values('"+vorname+"', '"+textBoxNachname.Text+"', '"+textBoxStrasse.Text+"', '"+textBoxPlz.Text+"', '"+textBoxOrt.Text+"')";
+                var query = $"INSERT into Mitarbeiter(Vorname, Name, Strasse, PLZ, Ort) values('"+textBoxVorname.Text+"', '"+textBoxNachname.Text+"', '"+textBoxStrasse.Text+"', '"+textBoxPlz.Text+"', '"+textBoxOrt.Text+"')";
 
                 var cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
