@@ -43,11 +43,14 @@ namespace Crud_App.Navigation
             this.textBoxOrt = new System.Windows.Forms.TextBox();
             this.anlegenButton = new System.Windows.Forms.Button();
             this.listBoxAuswahlTaetigkeiten = new System.Windows.Forms.ListBox();
-            this.zooDataSet1 = new Crud_App.ZooDataSet1();
             this.tätigkeitBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.zooDataSet1 = new Crud_App.ZooDataSet1();
             this.tätigkeitTableAdapter = new Crud_App.ZooDataSet1TableAdapters.TätigkeitTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.zooDataSet1)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxGeschlechtKurz = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tätigkeitBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zooDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -148,7 +151,7 @@ namespace Crud_App.Navigation
             // 
             // anlegenButton
             // 
-            this.anlegenButton.Location = new System.Drawing.Point(505, 307);
+            this.anlegenButton.Location = new System.Drawing.Point(503, 361);
             this.anlegenButton.Name = "anlegenButton";
             this.anlegenButton.Size = new System.Drawing.Size(129, 36);
             this.anlegenButton.TabIndex = 13;
@@ -163,28 +166,59 @@ namespace Crud_App.Navigation
             this.listBoxAuswahlTaetigkeiten.FormattingEnabled = true;
             this.listBoxAuswahlTaetigkeiten.Location = new System.Drawing.Point(503, 127);
             this.listBoxAuswahlTaetigkeiten.Name = "listBoxAuswahlTaetigkeiten";
-            this.listBoxAuswahlTaetigkeiten.Size = new System.Drawing.Size(263, 108);
+            this.listBoxAuswahlTaetigkeiten.Size = new System.Drawing.Size(211, 199);
             this.listBoxAuswahlTaetigkeiten.TabIndex = 14;
             this.listBoxAuswahlTaetigkeiten.ValueMember = "Tätigkeit_ID";
-            // 
-            // zooDataSet1
-            // 
-            this.zooDataSet1.DataSetName = "ZooDataSet1";
-            this.zooDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tätigkeitBindingSource
             // 
             this.tätigkeitBindingSource.DataMember = "Tätigkeit";
             this.tätigkeitBindingSource.DataSource = this.zooDataSet1;
             // 
+            // zooDataSet1
+            // 
+            this.zooDataSet1.DataSetName = "ZooDataSet1";
+            this.zooDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tätigkeitTableAdapter
             // 
             this.tätigkeitTableAdapter.ClearBeforeFill = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(502, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 16);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Tätigkeit";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(56, 377);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(75, 16);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Geschlecht";
+            // 
+            // textBoxGeschlechtKurz
+            // 
+            this.textBoxGeschlechtKurz.Location = new System.Drawing.Point(147, 377);
+            this.textBoxGeschlechtKurz.MaxLength = 1;
+            this.textBoxGeschlechtKurz.Name = "textBoxGeschlechtKurz";
+            this.textBoxGeschlechtKurz.Size = new System.Drawing.Size(44, 20);
+            this.textBoxGeschlechtKurz.TabIndex = 17;
             // 
             // NeuanlageSeite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBoxGeschlechtKurz);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.listBoxAuswahlTaetigkeiten);
             this.Controls.Add(this.anlegenButton);
             this.Controls.Add(this.textBoxOrt);
@@ -201,8 +235,8 @@ namespace Crud_App.Navigation
             this.Name = "NeuanlageSeite";
             this.Size = new System.Drawing.Size(978, 552);
             this.Load += new System.EventHandler(this.NeuanlageSeite_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.zooDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tätigkeitBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zooDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,5 +260,8 @@ namespace Crud_App.Navigation
         private System.Windows.Forms.BindingSource tätigkeitBindingSource;
         private ZooDataSet1 zooDataSet1;
         private ZooDataSet1TableAdapters.TätigkeitTableAdapter tätigkeitTableAdapter;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBoxGeschlechtKurz;
     }
 }

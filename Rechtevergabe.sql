@@ -23,6 +23,7 @@ CREATE LOGIN verwaltung WITH PASSWORD='abc123', CHECK_POLICY = OFF;
 ALTER ROLE personalerRole ADD MEMBER personalabteilungUser;
 GRANT SELECT ON SCHEMA :: hr TO personalerRole;
 GRANT SELECT, UPDATE, INSERT ON dbo.Mitarbeiter TO personalerRole;
+GRANT SELECT ON dbo.Tätigkeit TO personalerRole;
 
 ALTER ROLE pflegerRole ADD MEMBER pflegerUser;
 GRANT SELECT ON SCHEMA :: tierpflege TO pflegerRole;

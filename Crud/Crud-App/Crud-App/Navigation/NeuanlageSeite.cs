@@ -25,7 +25,7 @@ namespace Crud_App.Navigation
             const string tempDataSource = "localhost\\SQLEXPRESS01";
             // const string productionDataSource = "(localdb)\\mssqllocaldb";
 
-            const string connectionString = @"Data Source=localhost\SQLEXPRESS01;" +
+            const string connectionString = @"Data Source=(localdb)\mssqllocaldb;" +
                     "Initial Catalog=Zoo;" +
                     "Persist Security Info=True;User ID=" + username + ";Password=" + password + "";
 
@@ -33,7 +33,7 @@ namespace Crud_App.Navigation
             using (SqlConnection con = new SqlConnection(connectionString)) 
             {
                 con.Open();
-                var query = $"INSERT into Mitarbeiter(Vorname, Name, Strasse, PLZ, Ort, Tätigkeit_Nr) values('" + textBoxVorname.Text + "', '" + textBoxNachname.Text+"', '"+textBoxStrasse.Text+"', '"+textBoxPlz.Text+"', '"+textBoxOrt.Text+"', '"+ listBoxAuswahlTaetigkeiten.SelectedValue+"')";
+                var query = $"INSERT into Mitarbeiter(Vorname, Name, Strasse, PLZ, Ort, Tätigkeit_Nr, Geschlecht) values('" + textBoxVorname.Text + "', '" + textBoxNachname.Text+"', '"+textBoxStrasse.Text+"', '"+textBoxPlz.Text+"', '"+textBoxOrt.Text+"', '"+ listBoxAuswahlTaetigkeiten.SelectedValue+"', '" +textBoxGeschlechtKurz.Text+ "')";
 
                 var cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
@@ -47,10 +47,10 @@ namespace Crud_App.Navigation
 
             const string username = "personalabteilung";
             const string password = "abc123";
-            const string tempDataSource = "localhost\\SQLEXPRESS01";
+            // const string tempDataSource = "localhost\\SQLEXPRESS01";
             // const string productionDataSource = "(localdb)\\mssqllocaldb";
 
-            const string connectionString = @"Data Source=localhost\SQLEXPRESS01;" +
+            const string connectionString = @"Data Source=(localdb)\mssqllocaldb;" +
                     "Initial Catalog=Zoo;" +
                     "Persist Security Info=True;User ID=" + username + ";Password=" + password + "";
 

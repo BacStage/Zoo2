@@ -34,7 +34,7 @@ namespace Crud_App.Navigation
             const string tempDataSource = "localhost\\SQLEXPRESS01";
             // const string productionDataSource = "(localdb)\\mssqllocaldb";
 
-            const string connectionString = @"Data Source=localhost\SQLEXPRESS01;" +
+            const string connectionString = @"Data Source=(localdb)\mssqllocaldb;" +
                     "Initial Catalog=Zoo;" +
                     "Persist Security Info=True;User ID=" + username + ";Password=" + password + "";
 
